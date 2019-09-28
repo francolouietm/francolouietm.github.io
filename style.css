@@ -49,7 +49,7 @@ a:hover, a:focus {
 .text-box {
 	color: #fff;
 	display: inline-block;
-	font-size: 6em;
+	font-size: 4em;
 	font-weight: bold;
 	line-height: 1;
 	margin: .25em;
@@ -87,11 +87,11 @@ a:hover, a:focus {
 }
 
 .text-box_bg {
-	background-image: url(franco-sg.jpg);
+	background-image: url(franco-sg_xs.jpg);
 }
 
 .subheading {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 
 .social li {
@@ -101,5 +101,16 @@ a:hover, a:focus {
 }
 
 .social li a {
-	font-size: 1.2em;
+	color: #fff;
+	font-size: 1.33em;
+}
+
+@media screen and (min-width: 768px) {
+	.text-box {
+		font-size: 6em;
+	}
+
+	.text-box_bg {
+		background-image: url(franco-sg_sm.jpg);
+	}
 }

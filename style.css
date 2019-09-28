@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+:before,
+:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #add8e6;
+	transition: color 0.3s ease;
+}
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	   -moz-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+}
+
+.text-box {
+	color: #fff;
+	display: inline-block;
+	font-size: 6em;
+	font-weight: bold;
+	line-height: 1;
+	margin: .25em;
+	padding: .5em .75em;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-box:before,
+.text-box:after {
+	position: absolute;
+	content: '';
+}
+
+.text-box:before {
+	background-image: inherit;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -2;
+}
+
+.text-box:after {
+	background-color: #000;
+	position: absolute;
+	top: .125em;
+	right: .125em;
+	bottom: .125em;
+	left: .125em;
+	z-index: -1;
+}
+
+.text-box_bg {
+	background-image: url(franco-sg.jpg);
+}
+
+.subheading {
+	margin-bottom: 1em;
+}
+
+.social li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 0.5em;
+}
+
+.social li a {
+	font-size: 1.2em;
+}

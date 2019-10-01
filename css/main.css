@@ -1,0 +1,140 @@
+/* Resets */
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	background: #2a2b30;
+	color: #cecece;
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	 -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color: #add8e6;
+}
+
+::selection {
+	background-color: #84183c;
+}
+
+/* Main Container */
+.main-container {
+	padding: 50px 20px 1em;
+}
+
+/* Logo */
+svg {
+	fill:black;
+	float:left
+}
+
+.logo {
+	font: 16em/1 Arial;
+	overflow: hidden;
+	width: 157px;
+	height: 36px;
+}
+
+.logo__text {
+	font: 16em/1 Arial;
+	font-size: .5em;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+			user-select: none;
+}
+
+.logo__color {
+	fill: none;
+	stroke: white;
+	stroke-dasharray: 7% 28%;
+	stroke-width: 3px;
+	-webkit-animation: stroke-offset 9s infinite linear;
+			animation: stroke-offset 9s infinite linear;
+}
+
+.logo__color:nth-child(1) {
+	stroke: #84183c;
+	stroke-dashoffset: 7%;
+}
+
+.logo__color:nth-child(2) {
+	stroke: #f2b12f;
+	stroke-dashoffset: 14%;
+}
+
+.logo__color:nth-child(3) {
+	stroke: #13543c;
+	stroke-dashoffset: 21%;
+}
+
+.logo__color:nth-child(4) {
+	stroke: #efeac5;
+	stroke-dashoffset: 28%;
+}
+
+@-webkit-keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: 35%;
+		stroke-dasharray: 0 87.5%;
+	}
+}
+
+@keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: 35%;
+		stroke-dasharray: 0 87.5%;
+	}
+}
+
+/* Content */
+.content__photo {
+	border-radius: 100px;
+	border-left-color: #84183c;
+	border-top-color: #f2b12f;
+	border-right-color: #13543c;
+	border-bottom-color: #efeac5;
+	border-style: solid;
+	border-width: 100px;
+	margin: 2em auto;
+	width: 200px;
+	height: 200px;
+}
+
+.photo {
+	border-radius: 50%;
+	margin-top: -95px;
+	margin-left: -95px;
+	width: 190px;
+}
+
+@media screen and (min-width: 768px) {
+	.main-container {
+		padding: 6em 10vw 2em;
+	}
+
+	.logo {
+		width: 300px;
+		height: 52px;
+	}
+
+	.content__text {
+		max-width: 70%;
+	}
+
+	.content__photo {
+		margin: -5em 1em 0;
+		float: right;
+	}
+}

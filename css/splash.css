@@ -17,7 +17,7 @@ body {
 }
 
 body {
-	background-color: #000;
+	background-color: #1d1e21;
 	color: #fff;
 	font-family: 'Oswald', sans-serif;
 }
@@ -87,7 +87,7 @@ a:hover, a:focus {
 }
 
 .text-box_bg {
-	background-image: url(franco-sg_xs.jpg);
+	background-image: url('../imgs/franco-sg_xs.jpg');
 }
 
 .subheading {
@@ -111,6 +111,6 @@ a:hover, a:focus {
 	}
 
 	.text-box_bg {
-		background-image: url(franco-sg_sm.jpg);
+		background-image: url('../imgs/franco-sg_sm.jpg');
 	}
 }

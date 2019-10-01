@@ -77,7 +77,7 @@ a:hover, a:focus {
 }
 
 .text-box:after {
-	background-color: #000;
+	background-color: #1d1e21;
 	position: absolute;
 	top: .125em;
 	right: .125em;

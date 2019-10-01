@@ -23,17 +23,17 @@ body {
 }
 
 a {
-	color: #fff;
+	color: #cecece;
 	text-decoration: none;
 }
 
 a:hover, a:focus {
-	color: #add8e6;
+	color: #fff;
 	transition: color 0.3s ease;
 }
 
 ::selection {
-	background-color: #add8e6;
+	background-color: #84183c;
 }
 
 .main {
@@ -101,8 +101,13 @@ a:hover, a:focus {
 }
 
 .social li a {
-	color: #fff;
+	color: #cecece;
 	font-size: 1.33em;
+}
+
+.social li a:hover,
+.social li a:focus {
+	color: #fff;
 }
 
 @media screen and (min-width: 768px) {

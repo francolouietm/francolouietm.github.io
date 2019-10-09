@@ -15,13 +15,13 @@ body {
 }
 
 a {
-	color: #cecece;
+	color: #fff;
 	text-decoration: none;
 	outline: none;
 }
 
 a:focus, a:hover {
-	color: #fff;
+	color: #cecece;
 }
 
 ::selection {

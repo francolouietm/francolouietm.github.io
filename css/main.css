@@ -32,6 +32,17 @@ a:focus, a:hover {
 /* Main Container */
 .main-container {
 	padding: 50px 20px 1em;
+	position: relative;
+}
+
+/* Footer */
+.footer {
+	padding: 1em;
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    right: 0;
+	text-align: center;
 }
 
 /* Logo */

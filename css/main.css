@@ -198,6 +198,10 @@ svg {
 	word-spacing: -0.15em;
 }
 
+.project__title span {
+	font-weight: bold;
+}
+
 .project__cta {
 	font-size: 68.5%;
 	letter-spacing: 1px;

@@ -1,2 +1,2 @@
 # francolouietm.github.io
-Page under construction
+Work in progress.

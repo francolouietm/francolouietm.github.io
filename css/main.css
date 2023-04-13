@@ -137,7 +137,7 @@ body.dark {
 }
 
 @media (min-width: 900px) {
-    body {
+    /* body {
         font-size: 18px;
     }
 
@@ -148,7 +148,7 @@ body.dark {
     p {
         line-height: 1.8em;
         margin: 14px 0;
-    }
+    } */
 
     .header {
         display: flex;
@@ -179,7 +179,7 @@ body.dark {
         margin-bottom: 120px;
     }
 
-    .copyright {
+    /* .copyright {
         font-size: 16px;
     }
 
@@ -189,7 +189,7 @@ body.dark {
 
     .social .fa {
         padding: 4px;
-    }
+    } */
 }
 
 @media (min-width: 1200px) {

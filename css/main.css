@@ -18,13 +18,17 @@ p {
 }
 
 a {
-    color: #705454;
+    color: #987575;
     text-decoration: none;
 }
 
 ::selection {
     background: #e1d7d7;
     color: #575757;
+}
+
+::selection a {
+    color: #987575;
 }
 
 a:hover {
@@ -91,6 +95,7 @@ a:hover {
 }
 
 .social a {
+    color: #705454;
     font-size: 20px;
 }
 
@@ -125,7 +130,7 @@ body.dark {
 }
 
 .dark a:hover {
-    color: #705454;
+    color: #987575;
 }
 
 .dark .social a {
@@ -154,6 +159,10 @@ body.dark {
         line-height: 1.8em;
         margin: 14px 0;
     } */
+
+    .main {
+        padding: 50px 20px 40px;
+    }
 
     .header {
         display: flex;

@@ -1,6 +1,6 @@
 body {
-    background-color: #cfe2f3;
-    color: #555;
+    background-color: #f6f3f3;
+    color: #575757;
     font-family: 'Figtree', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -18,12 +18,17 @@ p {
 }
 
 a {
-    color: #073763;
+    color: #705454;
     text-decoration: none;
 }
 
+::selection {
+    background: #e1d7d7;
+    color: #575757;
+}
+
 a:hover {
-    color: #3d85c6;
+    color: #b79f9f;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
@@ -90,13 +95,13 @@ a:hover {
 }
 
 .social:hover a {
-    color: #3d85c6;
+    color: #b79f9f;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
 
 .social a:hover {
-    color: #073763;
+    color: #705454;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
@@ -116,15 +121,15 @@ body.dark {
 }
 
 .dark a {
-    color: #9fc5e8;
+    color: #b79f9f;
 }
 
 .dark a:hover {
-    color: #6fa8dc;
+    color: #705454;
 }
 
 .dark .social a {
-    color: #6fa8dc;
+    color: #b79f9f;
     opacity: 0.9;
 }
 

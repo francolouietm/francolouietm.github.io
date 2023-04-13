@@ -27,10 +27,6 @@ a {
     color: #575757;
 }
 
-::selection a {
-    color: #987575;
-}
-
 a:hover {
     color: #b79f9f;
     transition: all 0.3s ease-out;

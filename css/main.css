@@ -1,6 +1,6 @@
 body {
-    background-color: #f6f3f3;
-    color: #575757;
+    background-color: #445760;
+    color: #fff;
     font-family: 'Figtree', sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -18,17 +18,17 @@ p {
 }
 
 a {
-    color: #987575;
+    color: #b3e6fe;
     text-decoration: none;
 }
 
 ::selection {
-    background: #e1d7d7;
-    color: #575757;
+    background: #378bb1;
+    color: #fff;
 }
 
 a:hover {
-    color: #b79f9f;
+    color: #84d7fe;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
@@ -54,12 +54,13 @@ a:hover {
 }
 
 .heading--404 {
-    font-family: 'Over the Rainbow', cursive;
     font-size: 60px;
+    line-height: 1;
+    margin-top: 40px;
 }
 
 .subheading--404 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 60px;
 }
 
@@ -91,18 +92,18 @@ a:hover {
 }
 
 .social a {
-    color: #705454;
+    color: #b3e6fe;
     font-size: 20px;
 }
 
 .social:hover a {
-    color: #b79f9f;
+    color: #697980;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
 
 .social a:hover {
-    color: #705454;
+    color: #b3e6fe;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
@@ -115,47 +116,7 @@ a:hover {
     padding-right: 0;
 }
 
-/* Styling for dark mode */
-body.dark {
-    background-color: #222;
-    color: #eee;
-}
-
-.dark a {
-    color: #b79f9f;
-}
-
-.dark a:hover {
-    color: #987575;
-}
-
-.dark .social a {
-    color: #b79f9f;
-    opacity: 0.9;
-}
-
-.dark .social:hover a {
-    opacity: 0.4;
-}
-
-.dark .social a:hover {
-    opacity: 1;
-}
-
 @media (min-width: 900px) {
-    /* body {
-        font-size: 18px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        line-height: 2em;
-    }
-    
-    p {
-        line-height: 1.8em;
-        margin: 14px 0;
-    } */
-
     .main {
         padding: 50px 20px 40px;
     }
@@ -180,26 +141,14 @@ body.dark {
     }
 
     .heading--404 {
-        font-family: 'Over the Rainbow', cursive;
-        font-size: 120px;
+        font-size: 160px;
+        margin-top: 80px;
     }
     
     .subheading--404 {
         font-size: 20px;
         margin-bottom: 120px;
     }
-
-    /* .copyright {
-        font-size: 16px;
-    }
-
-    .social a {
-        font-size: 22px;
-    }
-
-    .social .fa {
-        padding: 4px;
-    } */
 }
 
 @media (min-width: 1200px) {

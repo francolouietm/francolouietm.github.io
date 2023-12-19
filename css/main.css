@@ -116,7 +116,26 @@ a:hover {
     padding-right: 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 480px) {
+    .footer {
+        margin: 0;
+        position: fixed;
+    }
+    
+    .copyright {
+        bottom: 20px;
+        left: 20px;
+        position: fixed;
+    }
+
+    .social {
+        bottom: 20px;
+        right: 20px;
+        position: fixed;
+    }
+}
+
+@media (min-width: 768px) {
     .main {
         padding: 50px 20px 40px;
     }
@@ -169,5 +188,15 @@ a:hover {
 
     .content-right {
         width: 50%;
+    }
+
+    .copyright {
+        bottom: 50px;
+        left: 50px;
+    }
+
+    .social {
+        bottom: 50px;
+        right: 50px;
     }
 }

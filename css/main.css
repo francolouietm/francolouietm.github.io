@@ -50,7 +50,7 @@ a:hover {
 }
 
 .heading {
-    color: #bbc0c2;
+    color: #a0a7aa;
     font-size: 1.8em;
     font-weight: 500;
     width: 140px;
@@ -70,11 +70,6 @@ a:hover {
     font-size: 5em;
     line-height: 1.1em;
 }
-
-.footer {
-
-}
-
 
 /* iPad */
 @media (min-width: 768px) {

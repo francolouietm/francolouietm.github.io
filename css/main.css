@@ -24,15 +24,15 @@ a {
     text-decoration: none;
 }
 
-::selection {
-    background: #f9e4bc;
-    color: #3b3f42;
-}
-
-a:hover {
+a:hover, a:active {
     color: #f9e4bc;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
+}
+
+::selection {
+    background: #f9e4bc;
+    color: #3b3f42;
 }
 
 .main {
@@ -67,8 +67,63 @@ a:hover {
 }
 
 .content--404 {
+    padding-top: 20vh;
+    text-align: center;
+}
+
+.content--404 h2 {
+    color: #a0a7aa;
     font-size: 5em;
     line-height: 1.1em;
+}
+
+.footer::before {
+    border-top: 1px solid #f1f2f2;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.footer--row {
+    display: flex;
+}
+
+.footer--cell {
+    flex: 1 1 0;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.footer h4, .footer h5, .footer p {
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.footer h4 {
+    color: #a0a7aa;
+}
+
+.footer h5 a {
+    color: #3b3f42;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.footer h5 a:hover, a:active {
+    color: #6c7578;
+    text-decoration: none;
+}
+
+
+.footer--socials h5 a::after {
+    content: '↗';
+}
+
+.footer--notes {
+    color: #a0a7aa;
+    margin-bottom: 2em;
 }
 
 /* iPad */
@@ -100,8 +155,9 @@ a:hover {
         line-height: 1.2em;
     }
 
-    .content--404 {
-        line-height: 1.2em;
+    .footer h4, .footer h5, .footer p {
+        font-size: 1.1em;
+        line-height: 1.4em;
     }
 }
 
@@ -109,5 +165,18 @@ a:hover {
 @media (min-width: 1200px) {
     .content--main-text {
         max-width: 70vw;
+    }
+
+    .content--404 h2 {
+        font-size: 8em;
+    }
+
+    .content--404 h3 {
+        font-size: 1.8em;
+    }
+
+
+    .footer--row {
+        width: 50%;
     }
 }

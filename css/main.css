@@ -116,9 +116,8 @@ a:hover, a:active {
     text-decoration: none;
 }
 
-
-.footer--socials h5 a::after {
-    content: '↗';
+.footer h5 a i {
+    font-size: 0.7em;
 }
 
 .footer--notes {
@@ -159,6 +158,10 @@ a:hover, a:active {
         font-size: 1.1em;
         line-height: 1.4em;
     }
+
+    .footer h5 a i {
+        font-size: 0.8em;
+    }
 }
 
 /* Desktop */
@@ -174,7 +177,6 @@ a:hover, a:active {
     .content--404 h3 {
         font-size: 1.8em;
     }
-
 
     .footer--row {
         width: 50%;

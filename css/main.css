@@ -127,20 +127,6 @@ a:hover, a:active {
     margin-bottom: 0.2em;
 }
 
-.content--cell h6 {
-    font-size: 1em;
-    line-height: 1.2em;
-    margin: 0.4em 0;
-}
-
-.content--cell p {
-    color: #a0a7aa;
-}
-
-.content--cell p > span {
-    color: #3b3f42;
-}
-
 .footer::before {
     margin: 2em 0;
 }

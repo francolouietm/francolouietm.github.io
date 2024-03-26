@@ -36,6 +36,10 @@ a:hover, a:active {
     color: #3b3f42;
 }
 
+.visibility--hidden-medium {
+    display: none;
+}
+
 .main {
     margin: 0 auto;
     padding: 1.6em;
@@ -86,12 +90,58 @@ a:hover, a:active {
     line-height: 1.1em;
 }
 
-.footer::before {
+.content--secondary::before, .footer::before {
     border-top: 1px solid #f1f2f2;
     content: '';
     display: block;
     height: 1px;
     width: 100%;
+}
+
+.content--secondary::before {
+    margin: 2em 0 1em;
+}
+
+.content--cell {
+    margin-bottom: 2em;
+}
+
+.content--title {
+    color: #a0a7aa;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+
+.content--cell-title, .content--cell-subheading {
+    font-size: 1.3em;
+    margin-bottom: 0.2em;
+}
+
+.content--cell-subheading {
+    color: #a0a7aa;
+}
+
+.content--cell h5 {
+    color: #a0a7aa;
+    font-size: 0.9em;
+    margin-bottom: 0.2em;
+}
+
+.content--cell h6 {
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0.4em 0;
+}
+
+.content--cell p {
+    color: #a0a7aa;
+}
+
+.content--cell p > span {
+    color: #3b3f42;
+}
+
+.footer::before {
     margin: 2em 0;
 }
 
@@ -134,6 +184,11 @@ a:hover, a:active {
 
 /* iPad */
 @media (min-width: 768px) {
+    .visibility--hidden-medium {
+        display: block;
+        visibility: hidden;
+    }
+
     .main {
         padding: 3em 2.4em 2em;
     }
@@ -159,6 +214,17 @@ a:hover, a:active {
     .content--main-text {
         font-size: 3em;
         line-height: 1.2em;
+    }
+
+    .content--row {
+        display: flex;
+    }
+
+    .content--cell {
+        flex: 1 1 0;
+        margin-bottom: 4em;
+        padding-right: 1.4em;
+        text-align: left;
     }
 
     .footer h4, .footer h5, .footer p {

@@ -1,3 +1,3 @@
 # francolouietm.github.io
 
-A very simple, mobile-responsive GitHub page containing my short bio, work, and interests 👨‍💻. Created using HTML and CSS.
+A simple, mobile-first portfolio website built using Github pages.

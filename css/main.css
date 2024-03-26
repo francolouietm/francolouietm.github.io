@@ -108,7 +108,7 @@ a:hover, a:active {
 
 .content--title {
     color: #a0a7aa;
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-bottom: 1em;
 }
 
@@ -225,6 +225,11 @@ a:hover, a:active {
         margin-bottom: 4em;
         padding-right: 1.4em;
         text-align: left;
+    }
+
+    .content--title {
+        font-size: 1.8em;
+        margin-bottom: 1.2em;
     }
 
     .footer h4, .footer h5, .footer p {

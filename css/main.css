@@ -83,8 +83,9 @@ a:hover, a:active {
     display: flex;
 }
 
+
 .content--recognition-cell:first-child, .content--recognition-cell:nth-child(2) {
-    flex: 2;
+    flex: 1.5;
 }
 
 .content--recognition-cell:last-child {
@@ -274,6 +275,10 @@ a:hover, a:active {
     .footer h5 a i {
         font-size: 0.8em;
     }
+
+    .footer--email {
+        flex: 0.5;
+    }
 }
 
 /* Desktop */
@@ -283,7 +288,7 @@ a:hover, a:active {
     }
 
     .content--recognition {
-        width: 62%;
+        width: 66%;
     }
 
     .content--404 h2 {

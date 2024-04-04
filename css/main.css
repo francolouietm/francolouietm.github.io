@@ -20,12 +20,12 @@ p {
 }
 
 a {
-    color: #f9e4bc;
+    color: #6c7578;
     text-decoration: none;
 }
 
 a:hover, a:active {
-    color: #f9e4bc;
+    color: #0b0c0d;
     text-decoration: none;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -82,7 +82,6 @@ a:hover, a:active {
 .content--recognition {
     display: flex;
 }
-
 
 .content--recognition-cell:first-child, .content--recognition-cell:nth-child(2) {
     flex: 1.5;
@@ -215,6 +214,14 @@ a:hover, a:active {
 .footer--notes {
     color: #a0a7aa;
     margin-bottom: 2em;
+}
+
+.footer--copyright {
+    display: block;
+}
+
+.footer--copyright p {
+    margin: 0;
 }
 
 /* iPad */

@@ -36,10 +36,6 @@ a:hover, a:active {
     color: #3b3f42;
 }
 
-.visibility--hidden-medium {
-    display: none;
-}
-
 .main {
     margin: 0 auto;
     padding: 1.6em;
@@ -48,10 +44,6 @@ a:hover, a:active {
 .header {
     height: 20vh;
     margin: 0;
-}
-
-.header--right {
-    text-align: right;
 }
 
 .heading {
@@ -69,76 +61,17 @@ a:hover, a:active {
     color: #6c7578;
 }
 
-.content {
+.content__primary {
     height: 80vh;
     position: relative;
 }
 
-.content--main-text {
+.content__about {
     font-size: 2.2em;
     line-height: 1.1em;
 }
 
-.content--recognition {
-    display: flex;
-}
-
-.content--recognition-cell:first-child, .content--recognition-cell:nth-child(2) {
-    flex: 1.5;
-}
-
-.content--recognition-cell:last-child {
-    flex: 1;
-    text-align: right;
-}
-
-.content--recognition-cell p {
-    margin: 0;
-}
-
-.content--recognition-cell:first-child p:not(:first-child) {
-    margin-left: 1.75em;
-}
-
-.content--recognition-medal::before {
-    background-color: #fff;
-    border: 1px solid #d7d7d7;
-    border-radius: 50%;
-    content: '';
-    display: inline-block;
-    margin-right: 0.5em;
-    vertical-align: middle;
-    width: 1.25em;
-    height: 1.25em;
-}
-
-.content--recognition-gold::before {
-    background-color: #c9b037;
-    border: none;
-}
-
-.content--recognition-silver::before {
-    background-color:#d7d7d7;
-    border: none;
-}
-
-.content--recognition-bronze::before {
-    background-color: #ad8a56;
-    border: none;
-}
-
-.content--404 {
-    padding-top: 20vh;
-    text-align: center;
-}
-
-.content--404 h2 {
-    color: #a0a7aa;
-    font-size: 5em;
-    line-height: 1.1em;
-}
-
-.content--secondary::before, .footer::before {
+.content__secondary::before, .footer::before {
     border-top: 1px solid #f1f2f2;
     content: '';
     display: block;
@@ -146,44 +79,121 @@ a:hover, a:active {
     width: 100%;
 }
 
-.content--secondary::before {
+.content__secondary::before {
     margin: 2em 0 1em;
 }
 
-.content--cell {
+.content__cell {
     margin-bottom: 2em;
 }
 
-.content--title {
+.content__title {
     color: #a0a7aa;
     font-size: 1.5em;
     margin-bottom: 1em;
 }
 
-.content--cell-title, .content--cell-subheading {
+.content__company, .content__role {
     font-size: 1.3em;
     margin-bottom: 0.2em;
 }
 
-.content--cell-subheading {
+.content__role {
     color: #a0a7aa;
 }
 
-.content--cell h5 {
+.content__year {
     color: #a0a7aa;
     font-size: 0.9em;
     margin-bottom: 0.2em;
+}
+
+.content__company--hidden {
+    display: none;
+}
+
+.content__recognition .content__row {
+    display: flex;
+}
+
+.content__recognition .content__row .content__cell {
+    margin-bottom: 0;
+}
+
+/*.content__recognition .content__row .content__cell:first-child, .content__recognition .content__row .content__cell:nth-child(2) {
+    flex: 1.5;
+}
+*/
+
+.content__recognition .content__row .content__cell:last-child {
+    flex: 1;
+    padding-right: 0;
+    text-align: right;
+}
+
+.content__recognition .content__row .content__cell:not(:last-child) {
+    flex: 1.5;
+}
+
+.content__recognition .content__row .content__cell p {
+    margin: 0;
+}
+
+.content__medal {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+.content__medal::before {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    border-radius: 50%;
+    content: '';
+    flex: none;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.content__medal span {
+    padding-left: 0.4em;
+}
+
+.content__medal--gold::before {
+    background-color: #c9b037;
+    border: none;
+}
+
+.content__medal--silver::before {
+    background-color:#d7d7d7;
+    border: none;
+}
+
+.content__medal--bronze::before {
+    background-color: #ad8a56;
+    border: none;
+}
+
+.content__404 {
+    text-align: center;
+}
+
+.content__404 h2 {
+    color: #a0a7aa;
+    font-size: 5em;
+    line-height: 1.1em;
+    padding-top: 20vh;
 }
 
 .footer::before {
     margin: 2em 0;
 }
 
-.footer--row {
+.footer__row {
     display: flex;
 }
 
-.footer--cell {
+.footer__cell {
     flex: 1 1 0;
     margin-bottom: 2em;
     text-align: left;
@@ -211,22 +221,22 @@ a:hover, a:active {
     font-size: 0.7em;
 }
 
-.footer--notes {
+.footer__notes {
     color: #a0a7aa;
     margin-bottom: 2em;
 }
 
-.footer--copyright {
+.footer__copyright {
     display: block;
 }
 
-.footer--copyright p {
+.footer__copyright p {
     margin: 0;
 }
 
 /* iPad */
 @media (min-width: 768px) {
-    .visibility--hidden-medium {
+    .content__company--hidden {
         display: block;
         visibility: hidden;
     }
@@ -240,12 +250,8 @@ a:hover, a:active {
         justify-content: space-between;
     }
 
-    .header--left {
+    .header__title {
         width: 74%;
-    }
-
-    .header--right {
-        width: 25%;
     }
 
     .heading {
@@ -253,25 +259,29 @@ a:hover, a:active {
         text-align: left;
     }
 
-    .content--main-text {
+    .content__about {
         font-size: 3em;
         line-height: 1.2em;
     }
 
-    .content--row {
+    .content__row {
         display: flex;
     }
 
-    .content--cell {
+    .content__cell {
         flex: 1 1 0;
         margin-bottom: 4em;
         padding-right: 1.4em;
         text-align: left;
     }
 
-    .content--title {
+    .content__title {
         font-size: 1.8em;
         margin-bottom: 1.2em;
+    }
+
+    .content__recognition .content__row .content__cell {
+        margin-bottom: 0;
     }
 
     .footer h4, .footer h5, .footer p {
@@ -283,30 +293,30 @@ a:hover, a:active {
         font-size: 0.8em;
     }
 
-    .footer--email {
+    .footer__email .footer__cell {
         flex: 0.5;
     }
 }
 
 /* Desktop */
 @media (min-width: 1200px) {
-    .content--main-text {
+    .content__about {
         max-width: 70vw;
     }
 
-    .content--recognition {
+    .content__recognition .content__row  {
         width: 66%;
     }
 
-    .content--404 h2 {
+    .content__404 h2 {
         font-size: 8em;
     }
 
-    .content--404 h3 {
+    .content__404 h3 {
         font-size: 1.8em;
     }
 
-    .footer--row {
+    .footer__row {
         width: 50%;
     }
 }

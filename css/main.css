@@ -56,6 +56,7 @@ a:hover, a:active {
 
 .heading a {
     color: #a0a7aa;
+    word-break: break-word;
 }
 
 .heading a:hover, .heading a:active {

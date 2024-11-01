@@ -304,6 +304,21 @@ a:hover, a:active {
     margin: 0;
 }
 
+.footer__icon {
+    position: absolute;
+    right: 1.6em;
+}
+
+.footer__icon .fa {
+    color: #a0a7aa;
+    font-size: 1.5em;
+}
+
+.footer__icon .fa-otter {
+    rotate: -20deg;
+}
+
+
 /* iPad */
 @media (min-width: 768px) {
     .content__company--hidden {
@@ -359,6 +374,10 @@ a:hover, a:active {
 
     .footer__email .footer__cell {
         flex: 0.5;
+    }
+
+    .footer__icon {
+        right: 2.4em;
     }
 }
 

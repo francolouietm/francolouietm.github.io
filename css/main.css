@@ -27,7 +27,7 @@ p {
 a {
     color: #183153;
     text-decoration: none;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 a:hover, a:active {
@@ -167,8 +167,12 @@ a:hover, a:active {
     margin: 2em 0 1em;
 }
 
-.content__cell {
+.content__row {
     margin-bottom: 2em;
+}
+
+.content__cell {
+    margin-bottom: 0;
 }
 
 .content__title {
@@ -353,6 +357,7 @@ a:hover, a:active {
 
     .content__row {
         display: flex;
+        margin-bottom: 0;
     }
 
     .content__cell {
@@ -407,7 +412,7 @@ a:hover, a:active {
         font-size: 1.8em;
     }
 
-    .footer__row {
+    .footer__socials {
         width: 50%;
     }
 }

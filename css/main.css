@@ -186,7 +186,7 @@ a:hover, a:active {
     color: #a0a7aa;
 }
 
-.content__year {
+.content__address, .content__year {
     color: #a0a7aa;
     font-size: 0.9em;
     margin-bottom: 0.2em;

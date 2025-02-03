@@ -296,7 +296,7 @@ a:hover, a:active {
 }
 
 .footer h5 a i {
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 .footer__notes {
@@ -312,19 +312,8 @@ a:hover, a:active {
     margin: 0;
 }
 
-.footer__icon {
-    position: absolute;
-    top: 1.1em;
-    right: 0;
-}
-
-.footer__icon .fa-solid {
-    color: #a0a7aa;
-    font-size: 1.5em;
-}
-
-.fa-otter {
-    rotate: -20deg;
+.fa-arrow-up {
+    rotate: 45deg;
 }
 
 .fa-0 {
@@ -379,18 +368,6 @@ a:hover, a:active {
     .footer h4, .footer h5, .footer p {
         font-size: 1.1em;
         line-height: 1.4em;
-    }
-
-    .footer h5 a i {
-        font-size: 0.8em;
-    }
-
-    .footer__email .footer__cell {
-        flex: 0.5;
-    }
-
-    .footer__icon .fa-solid {
-        font-size: 1.6em;
     }
 }
 

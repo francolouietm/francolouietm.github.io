@@ -1,16 +1,11 @@
 /* Mobile */
 body {
-    background: #fff;
-    color: #3b3f42;
+    background: #222;
+    color: #fff;
     font-family: "Instrument Sans", sans-serif;
     font-size: 1em;
     font-weight: 400;
     margin: 0;
-}
-
-body.dark {
-    background-color: #333;
-    color: #d6d9da;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,29 +20,21 @@ p {
 }
 
 a {
-    color: #183153;
-    text-decoration: none;
+    color: #a7a7a7;
+    text-decoration: underline;
     /* word-break: break-all; */
 }
 
 a:hover, a:active {
-    color: #23487b;
+    color: #a7a7a7;
     text-decoration: none;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
 
-.dark a {
-    color: #8caede;
-}
-
-.dark a:hover, .dark a:active {
-    color: #dbe6f5;
-}
-
 ::selection {
-    background: #2f60a2;
-    color: #fff;
+    background: #fff;
+    color: #222;
 }
 
 .main {
@@ -63,7 +50,7 @@ a:hover, a:active {
 }
 
 .heading {
-    color: #a0a7aa;
+    color: #a7a7a7;
     font-size: 1.8em;
     font-weight: 500;
     text-align: left;
@@ -71,12 +58,14 @@ a:hover, a:active {
 }
 
 .heading a {
-    color: #a0a7aa;
+    color: #a7a7a7;
+    text-decoration: none;
     word-break: break-word;
 }
 
 .heading a:hover, .heading a:active {
-    color: #6c7578;
+    color: #c0c0c0;
+    text-decoration: none;
 }
 
 .switch {
@@ -159,10 +148,6 @@ a:hover, a:active {
     width: 100%;
 }
 
-.dark .content__secondary::before, .dark .footer::before {
-    border-color: #666;
-}
-
 .content__secondary::before {
     margin: 2em 0 1em;
 }
@@ -176,9 +161,13 @@ a:hover, a:active {
 }
 
 .content__title {
-    color: #a0a7aa;
+    color: #fff;
     font-size: 1.5em;
     margin-bottom: 1em;
+}
+
+.content__company {
+    color: #a7a7a7;
 }
 
 .content__company, .content__role {
@@ -187,11 +176,15 @@ a:hover, a:active {
 }
 
 .content__role {
-    color: #a0a7aa;
+    color: #fff;
+}
+
+.content__address {
+    display: none;
 }
 
 .content__address, .content__year {
-    color: #a0a7aa;
+    color: #fff;
     font-size: 0.9em;
     margin-bottom: 0.2em;
 }
@@ -262,7 +255,7 @@ a:hover, a:active {
 }
 
 .content__404 h2 {
-    color: #a0a7aa;
+    color: #fff;
     font-size: 5em;
     line-height: 1.1em;
     padding-top: 20vh;
@@ -292,15 +285,16 @@ a:hover, a:active {
 }
 
 .footer h4 {
-    color: #a0a7aa;
+    color: #fff;
 }
 
 .footer h5 a i {
     font-size: 0.9em;
+    margin-left: 0.2em;
 }
 
 .footer__notes {
-    color: #a0a7aa;
+    color: #fff;
     margin-bottom: 2em;
 }
 
@@ -310,6 +304,10 @@ a:hover, a:active {
 
 .footer__copyright p {
     margin: 0;
+}
+
+.fa {
+    margin-right: 0.2em;
 }
 
 .fa-arrow-up {
@@ -322,6 +320,14 @@ a:hover, a:active {
 
 /* iPad */
 @media (min-width: 768px) {
+    .content__company {
+        color: #fff;
+    }
+
+    .content__address {
+        display: block;
+    }
+
     .content__company--hidden {
         display: block;
         visibility: hidden;

@@ -318,6 +318,14 @@ a:hover, a:active {
     rotate: 27deg;
 }
 
+.icon__duck {
+    position: absolute;
+    right: 0;
+    top: 1em;
+    width: 25px;
+    z-index: 1;
+}
+
 /* iPad */
 @media (min-width: 768px) {
     .content__company {
@@ -375,6 +383,11 @@ a:hover, a:active {
         font-size: 1.1em;
         line-height: 1.4em;
     }
+
+    .icon__duck {
+        top: 1.5em;
+        width: 40px;
+    }
 }
 
 /* Desktop */
@@ -397,5 +410,10 @@ a:hover, a:active {
 
     .footer__socials {
         width: 50%;
+    }
+
+    .icon__duck {
+        right: 1em;
+        width: 50px;
     }
 }

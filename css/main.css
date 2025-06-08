@@ -391,6 +391,12 @@ a:hover, a:active {
 }
 
 /* Desktop */
+@media (min-width: 1024px) {
+    .content__about {
+        max-width: 85vw;
+    }
+}
+
 @media (min-width: 1200px) {
     .content__about {
         max-width: 70vw;

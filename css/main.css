@@ -1,6 +1,6 @@
 /* Mobile */
 body {
-    background: #222;
+    background: #485148;
     color: #fff;
     font-family: "Instrument Sans", sans-serif;
     font-size: 1em;
@@ -20,13 +20,13 @@ p {
 }
 
 a {
-    color: #a7a7a7;
+    color: #def5bf;
     text-decoration: underline;
     /* word-break: break-all; */
 }
 
 a:hover, a:active {
-    color: #a7a7a7;
+    color: #def5bf;
     text-decoration: none;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
@@ -34,7 +34,7 @@ a:hover, a:active {
 
 ::selection {
     background: #fff;
-    color: #222;
+    color: #485148;
 }
 
 .main {
@@ -50,7 +50,7 @@ a:hover, a:active {
 }
 
 .heading {
-    color: #a7a7a7;
+    color: #def5bf;
     font-size: 1.8em;
     font-weight: 500;
     text-align: left;
@@ -58,7 +58,7 @@ a:hover, a:active {
 }
 
 .heading a {
-    color: #a7a7a7;
+    color: #def5bf;
     text-decoration: none;
     word-break: break-word;
 }
@@ -167,7 +167,7 @@ a:hover, a:active {
 }
 
 .content__company {
-    color: #a7a7a7;
+    color: #def5bf;
 }
 
 .content__company, .content__role {

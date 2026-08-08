@@ -8,4 +8,4 @@ A simple, mobile-first personal website built using Github pages.
 
 **Mobile preview**
 
-![mobile](/assets/portfolio-mobile.jpg)
+![mobile](/assets/portfolio-mobile.png)
